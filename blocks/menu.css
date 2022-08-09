@@ -1,0 +1,93 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.menu__item {
+  display: inline;
+}
+
+.menu__item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #E1FD2C;
+  text-transform: uppercase;
+}
+
+.menu__link:hover {
+  opacity: 0.6;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked ~ label .menu__open-button {
+  display: none;
+}
+
+.menu__checkbox:checked ~ label .menu__close-button {
+  display: block;
+}
+
+.menu__checkbox ~ label .menu__open-button {
+  display: block;
+}
+
+.menu__checkbox ~ label .menu__close-button {
+  display: none;
+}
+
+.menu__button {
+  margin-left: auto;
+  display: none;
+}
+
+.menu__close-button {
+  width: 37px;
+  height: 37px;
+  margin-right: 28px;
+}
+
+.menu__open-button {
+  width: 26px;
+  height: 22px;
+  margin-right: 34px;
+}
+
+.menu_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    margin-left: 34px;
+  }
+  .menu__button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-left: 20px;
+  }
+  .menu__item {
+    display: inline;
+  }
+  .menu__item:not(:last-of-type) {
+    margin-right: 16px;
+  }
+  .menu__close-button {
+    margin-right: 14px;
+  }
+  .menu__open-button {
+    margin-right: 20px;
+    width: 20px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../blocks/variables.scss';
+
+
+.header {
+    display: flex;
+    min-height: 70px;
+    border-bottom: 1px solid $color-text;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: $screen-mobile) {
+    .header {
+        font-size: 11px;
+    }
+}

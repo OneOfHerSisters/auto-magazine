@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  min-height: 70px;
+  border-bottom: 1px solid #E1FD2C;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 11px;
+  }
+}
