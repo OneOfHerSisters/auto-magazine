@@ -38,3 +38,42 @@ window.addEventListener('resize', evt => {
     addClass(menu, 'menu_hidden');
     }
 } )
+
+const images = document.querySelectorAll(".slider__image");
+const slider = document.querySelector(".slider");
+const sliderSlide= document.querySelector(".slider__slide");
+const prevButton = document.querySelector(".btn-prev");
+const nextButton = document.querySelector(".btn-next");
+
+let width;
+let activeSlide = 0;
+
+const turnSlider = () => {
+    sliderSlide.style.transform = "translate(-" + width * activeSlide + "px)";
+};
+
+const initialize = () => {
+  width = slider.offsetWidth;
+  sliderSlide.style.width = width * images.length + "px";
+  images.forEach((image) => {
+    image.style.width = width + "px";
+    image.style.heigth = "auto";
+  });
+};
+
+initialize();
+
+window.addEventListener("resize", () => {
+  initialize();
+  turnSlider();
+});
+
+nextButton.addEventListener("click", () => {
+  activeSlide >= images.length - 1 ? (activeSlide = 0) : activeSlide++;
+  turnSlider();
+});
+
+prevButton.addEventListener("click", () => {
+  activeSlide <= 0 ? (activeSlide = images.length - 1) : activeSlide--;
+  turnSlider();
+});

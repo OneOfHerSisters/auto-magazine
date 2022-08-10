@@ -1,0 +1,18 @@
+@import '../blocks/variables.scss';
+
+.slider {
+    overflow: hidden;
+    border-right: 1px solid $color-text;
+
+    &__slide {
+        display: flex;
+        transition: all 0.8s ease;
+    }
+}
+
+
+@media screen and (max-width: $screen-tablet) {
+    .slider {
+        border-right: 0;
+    }
+}

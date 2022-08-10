@@ -1,0 +1,26 @@
+@import '../blocks/variables.scss';
+
+.btn {
+    background: $color-background;
+    border: 0;
+    padding: 0;
+}
+
+.btn:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: $screen-mobile) {
+    .btn {
+        width: 24px;
+        height: 20px;
+
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}
