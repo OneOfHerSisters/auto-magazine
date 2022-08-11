@@ -11,5 +11,12 @@
 @media screen and (max-width: 1023px) {
   .slider {
     border-right: 0;
+    max-height: 510px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider__image {
+    max-height: 204px;
   }
 }

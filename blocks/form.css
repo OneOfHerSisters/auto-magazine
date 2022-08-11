@@ -28,6 +28,7 @@
 }
 
 .form__input {
+  max-height: 32px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;

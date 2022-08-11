@@ -29,6 +29,7 @@
     }
 
     &__input {
+        max-height: 32px;
         font-family: inherit; 
         font-style: normal;
         font-weight: 400;
@@ -86,8 +87,5 @@
     .form {
         margin: 60px auto 120px auto;
         width: 280px;
-
-        &__subtitle {
-        }
     }
 }

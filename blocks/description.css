@@ -2,6 +2,7 @@
   color: #E1FD2C;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 506px;
 }
 
 .description__about {

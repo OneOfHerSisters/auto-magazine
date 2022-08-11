@@ -41,7 +41,8 @@
     padding: 0;
   }
   .gallery__bottombar {
-    min-height: 96px;
+    min-height: auto;
+    height: 94px;
   }
   .gallery__container-button {
     margin-top: 50px;

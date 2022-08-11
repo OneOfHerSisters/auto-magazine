@@ -34,7 +34,7 @@
   height: 64px;
   border: 1px solid #E1FD2C;
   grid-area: button;
-  margin: 60px auto 0;
+  margin: 45px auto 0;
 }
 
 .intro__button:hover {
@@ -49,6 +49,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .intro__image {
@@ -106,6 +107,7 @@
   }
   .intro__image {
     min-width: 280px;
+    max-height: 202px;
   }
   .intro__content {
     max-width: 280px;

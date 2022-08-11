@@ -4,6 +4,7 @@
     color: $color-text;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 506px;
 
     &__about {
         padding: 40px 50px 45px;
