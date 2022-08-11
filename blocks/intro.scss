@@ -37,6 +37,12 @@
         border: 1px solid $color-text;
         grid-area: button;
         margin: 60px auto 0;
+
+        &:hover {
+            background-color: $color-text;
+            color: $color-background;
+            font-weight: 600;
+        }
     }
 
     &__content {

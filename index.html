@@ -27,7 +27,7 @@
         <img
           src="images/AUTO-MAGAZINE.svg"
           alt="логотип Auto-Magazine"
-          class="logo"
+          class="logo logo_place_header"
         />
 
         <input type="checkbox" id="menu__checkbox" class="menu__checkbox" />
@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="gallery__bottombar">
-            <h1 class="gallery__title">Галерея</h1>
+            <h1 class="title title_gallery-margins">Галерея</h1>
             <div class="gallery__container-button">
               <button class="btn btn-prev">
                 <img class="btn__img" src="images/arrow-prev.svg" alt="" />
@@ -111,6 +111,66 @@
             </div>
           </div>
         </section>
+
+        <section class="press">
+          <div class="press__title-container">
+            <h1 class="title">Пресса</h1>
+          </div>
+          <div class="press__content">
+            <p class="press__source press__source_active">
+              <span class="press__name">Engadget:</span> VW’s e-BULLI concept
+              shows how your classic van can become an EV.
+            </p>
+            <p class="press__source">
+              <span class="press__name">Drive.ru:</span> Вэн Volkswagen e-Bulli
+              скрестил классику с современной техникой.
+            </p>
+            <div class="press__link-container">
+              <ul class="dots">
+                <li class="dots__item dots__item_active"></li>
+                <li class="dots__item"></li>
+              </ul>
+              <a
+                class="press__link press__link_active"
+                href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html"
+                >Читать</a
+              >
+              <a
+                class="press__link"
+                href="https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html"
+                >Читать</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="subscribe-section">
+            <h1 class="title">Подписка</h1>
+            <p class="subscribe-section__subtitle">
+              На новые спецвыпуски машин.
+            </p>
+
+            <form class="form" method="post">
+              <fieldset class="form__name-area">
+                <input class="form__input" type="text" placeholder="имя" />
+                <input class="form__input" type="text" placeholder="фамилия" />
+              </fieldset>
+              <fieldset class="form__subscribe-area">
+                <input class="form__input" type="email" placeholder="почта" />
+                <button class="form__button" type="button">подписка</button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="logo-section">
+            <img
+              src="images/AUTO-MAGAZINE.svg"
+              alt="логотип Auto-Magazine"
+              class="logo logo_place_footer"
+            />
+            <p class="logo-section__copyright">&copy; Auto-Magazine 2021</p>
+          </div>
+        </footer>
       </main>
     </div>
     <script src="scripts/script.js"></script>

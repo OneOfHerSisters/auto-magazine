@@ -1,0 +1,27 @@
+@import '../blocks/variables.scss';
+
+.dots {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        border-radius: 999px;
+        height: 12px;
+        width: 12px;
+        border: 1px solid $color-text;
+
+        &:not(:last-of-type) {
+            margin-right: 14px;
+        }
+
+        &_active {
+            background: $color-text;
+        }
+    }
+
+}
+

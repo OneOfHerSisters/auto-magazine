@@ -1,0 +1,28 @@
+.subscribe-section {
+  padding: 50px;
+  border-right: 1px solid #E1FD2C;
+}
+
+.subscribe-section__subtitle {
+  font-size: 19px;
+  line-height: 28px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .subscribe-section {
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-section {
+    padding: 0;
+  }
+  .subscribe-section__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 14px;
+  }
+}

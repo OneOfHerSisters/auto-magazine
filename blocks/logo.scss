@@ -1,18 +1,27 @@
 @import '../blocks/variables.scss';
 
 .logo {
-    position: absolute;
-    margin: 0 auto; 
-    left: 0; 
-    right: 0;
-
     &_hidden {
         display: none;
       }
+
+    &_place_header {
+        position: absolute;
+        margin: 0 auto; 
+        left: 0; 
+        right: 0;
+    }
 }
 
 @media screen and (max-width: $screen-mobile) {
     .logo {
-    width: 100px;
+        &_place_header {
+            width: 100px;
+        }
+
+        &_place_footer {
+            width: 280px;
+            align-self: center;
+        }
     }
 }

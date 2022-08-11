@@ -1,16 +1,20 @@
-.logo {
+.logo_hidden {
+  display: none;
+}
+
+.logo_place_header {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
 }
 
-.logo_hidden {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
-  .logo {
+  .logo_place_header {
     width: 100px;
+  }
+  .logo_place_footer {
+    width: 280px;
+    align-self: center;
   }
 }

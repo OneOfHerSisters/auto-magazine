@@ -1,0 +1,23 @@
+.dots {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dots__item {
+  border-radius: 999px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #E1FD2C;
+}
+
+.dots__item:not(:last-of-type) {
+  margin-right: 14px;
+}
+
+.dots__item_active {
+  background: #E1FD2C;
+}

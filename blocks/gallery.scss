@@ -6,13 +6,6 @@
     position: relative;
     border-bottom: 1px solid $color-text;
 
-    &__title {
-        font-weight: 400;
-        font-size: 46px;
-        line-height: 46px;
-        margin: 0;
-    }
-
     &__bottombar {
         grid-row: 2;
        color: $color-text;
@@ -50,13 +43,6 @@
 
         &__bottombar {
             padding: 0;
-        }
-
-        &__title {
-            font-size: 26px;
-            line-height: 26px;
-            margin-top: 50px;
-            margin-bottom: 20px;
         }
 
         &__bottombar {

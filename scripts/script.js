@@ -39,6 +39,10 @@ window.addEventListener('resize', evt => {
     }
 } )
 
+if( window.innerWidth < 1024){
+  addClass(menu, 'menu_hidden')
+}
+
 const images = document.querySelectorAll(".slider__image");
 const slider = document.querySelector(".slider");
 const sliderSlide= document.querySelector(".slider__slide");
@@ -77,3 +81,47 @@ prevButton.addEventListener("click", () => {
   activeSlide <= 0 ? (activeSlide = images.length - 1) : activeSlide--;
   turnSlider();
 });
+
+const dots = document.querySelectorAll('.dots__item')
+
+dots.forEach(dot => {
+    dot.addEventListener('click', function() {
+        
+    })
+})
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.press__source');
+const links =  document.querySelectorAll('.press__link');
+
+function ChangeDot(dot) {
+    document.querySelector(".dots__item_active").classList.remove('dots__item_active')
+    dot.classList.add('dots__item_active');
+}
+
+function ChangeCard(i) {
+    document.querySelector('.press__source_active').classList.remove('press__source_active');
+    slides[i].classList.add('press__source_active');
+
+    document.querySelector('.press__link_active').classList.remove('press__link_active');
+    links[i].classList.add('press__link_active');
+}
+
+for (var i = 0; i < dots.length; i++) {
+    (function(index){
+       dots[i].onclick = function() {
+        if (currentSlide !== index) {
+            ChangeDot(dots[index]);
+            ChangeCard(index);
+            currentSlide = index;
+        }
+      }
+    })(i);
+   }
+
+const formButton = document.querySelector('.form__button');
+
+formButton.addEventListener('click', function() {
+  formButton.innerHTML = "Готово!";
+})
