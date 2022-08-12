@@ -1,0 +1,27 @@
+.btn {
+  background: #191D2C;
+  border: 0;
+  padding: 0;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 24px;
+    height: 20px;
+  }
+  .btn:not(:last-of-type) {
+    margin-right: 16px;
+  }
+  .btn__img {
+    width: 100%;
+  }
+}

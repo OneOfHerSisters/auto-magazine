@@ -1,0 +1,30 @@
+.dots {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: min-content;
+}
+
+.dots__item {
+  border-radius: 9999px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #E1FD2C;
+  background: #191D2C;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.dots__item:not(:last-of-type) {
+  margin-right: 14px;
+}
+
+.dots__item:hover {
+  cursor: pointer;
+}
+
+.dots__item_active {
+  background: #E1FD2C;
+}

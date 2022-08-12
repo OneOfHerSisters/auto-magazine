@@ -1,0 +1,123 @@
+.description {
+  color: #E1FD2C;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 506px;
+}
+
+.description__about {
+  padding: 40px 50px 45px;
+  border: 1px solid #E1FD2C;
+  border-left: 0;
+}
+
+.description__pros {
+  padding: 40px 50px 45px;
+  border: 1px solid #E1FD2C;
+  border-left: 0;
+  border-right: 0;
+}
+
+.description__cons {
+  padding: 40px 50px 45px;
+  border: 1px solid #E1FD2C;
+  border-right: 0;
+}
+
+.description__text {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.description__title {
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  margin: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.description__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.description__list-item {
+  font-size: 21px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.description__list-item:not(:last-of-type) {
+  margin-bottom: 2px;
+}
+
+.description__name {
+  font-weight: 400;
+}
+
+.description__assessment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1023px) {
+  .description {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(422px, auto);
+    grid-auto-rows: minmax(506px, auto);
+  }
+  .description__about {
+    border-bottom: 0;
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    grid-template-columns: minmax(320px, auto);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+  .description__about {
+    padding: 19px 20px 18px;
+    grid-column: 1 / 2;
+  }
+  .description__pros {
+    padding: 20px;
+    border-bottom: 0;
+  }
+  .description__cons {
+    padding: 20px;
+    border-left: 0;
+  }
+  .description__text {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    font-weight: 300;
+  }
+  .description__title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  .description__list-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .description__list-item:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
+  .description__name {
+    font-weight: 400;
+  }
+  .description__assessment {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+.slider {
+  overflow: hidden;
+  border-right: 1px solid #e1fd2c;
+}
+
+.slider__slide {
+  display: flex;
+  transition: all 0.8s ease;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider {
+    border-right: 0;
+  }
+}

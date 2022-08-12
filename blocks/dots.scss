@@ -1,0 +1,32 @@
+.dots {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: min-content;
+
+    &__item {
+        border-radius: 9999px;
+        height: 12px;
+        width: 12px;
+        border: 1px solid $color-text;
+        background: $color-background;
+        box-sizing: border-box;
+        padding: 0;
+
+        &:not(:last-of-type) {
+            margin-right: 14px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &_active {
+            background: $color-text;
+        }
+    }
+
+}
+

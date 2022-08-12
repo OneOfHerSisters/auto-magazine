@@ -1,0 +1,46 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.menu__item {
+  display: inline;
+}
+
+.menu__item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #E1FD2C;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu__link:hover {
+  opacity: 0.6;
+}
+
+.menu_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    margin-left: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    margin-left: 20px;
+  }
+  .menu__item {
+    display: inline;
+  }
+  .menu__item:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}

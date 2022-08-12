@@ -1,0 +1,29 @@
+.subscribe-section {
+    padding: 50px;
+    border-right: 1px solid $color-text;
+
+    &__subtitle {
+        font-size: 19px;
+        line-height: 28px;
+        margin: 0;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: $screen-tablet) {
+    .subscribe-section {
+        border-right: 0;
+    }
+}
+
+@media screen and (max-width: $screen-mobile) {
+    .subscribe-section {
+        padding: 0;
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 10px;
+        }
+    }
+}
