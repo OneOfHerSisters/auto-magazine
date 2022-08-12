@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pages/index.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rav4wjb.css" />
-    <link rel="stylesheet" href="vendor/normalize.css" />
     <title>Auto-Magazine</title>
   </head>
   <body class="page">
@@ -114,10 +113,10 @@
           <div class="gallery__bottombar">
             <h2 class="title title_gallery-margins">Галерея</h2>
             <div class="gallery__container-button">
-              <button class="btn btn-prev">
+              <button type="button" class="btn btn_type_prev">
                 <img class="btn__img" src="images/arrow-prev.svg" alt="назад" />
               </button>
-              <button class="btn btn-next">
+              <button type="button" class="btn btn_type_next">
                 <img
                   class="btn__img"
                   src="images/arrow-next.svg"
@@ -142,10 +141,10 @@
               скрестил классику с современной техникой.
             </p>
             <div class="press__link-container">
-              <ul class="dots">
-                <li class="dots__item dots__item_active"></li>
-                <li class="dots__item"></li>
-              </ul>
+              <nav class="dots">
+                <button class="dots__item dots__item_active"></button>
+                <button class="dots__item"></button>
+              </nav>
               <a
                 class="press__link press__link_active"
                 href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html"
@@ -159,35 +158,49 @@
             </div>
           </div>
         </section>
-
-        <footer class="footer">
-          <div class="subscribe-section">
-            <h1 class="title">Подписка</h1>
-            <p class="subscribe-section__subtitle">
-              На новые спецвыпуски машин.
-            </p>
-
-            <form class="form" method="post">
-              <fieldset class="form__name-area">
-                <input class="form__input" type="text" placeholder="имя" />
-                <input class="form__input" type="text" placeholder="фамилия" />
-              </fieldset>
-              <fieldset class="form__subscribe-area">
-                <input class="form__input" type="email" placeholder="почта" />
-                <button class="form__button" type="button">подписка</button>
-              </fieldset>
-            </form>
-          </div>
-          <div class="logo-section">
-            <img
-              src="images/AUTO-MAGAZINE.svg"
-              alt="логотип Auto-Magazine"
-              class="logo logo_place_footer"
-            />
-            <p class="logo-section__copyright">&copy; Auto-Magazine 2021</p>
-          </div>
-        </footer>
       </main>
+      <footer class="footer">
+        <div class="subscribe-section">
+          <h1 class="title">Подписка</h1>
+          <p class="subscribe-section__subtitle">На новые спецвыпуски машин.</p>
+
+          <form class="form" action="scripts/script.js" method="POST">
+            <fieldset class="form__name-area">
+              <input
+                name="first-name"
+                class="form__input"
+                type="text"
+                placeholder="имя"
+              />
+              <input
+                name="second-name"
+                class="form__input"
+                type="text"
+                placeholder="фамилия"
+              />
+            </fieldset>
+            <fieldset class="form__subscribe-area">
+              <input
+                name="email"
+                class="form__input"
+                type="email"
+                placeholder="почта"
+              />
+              <button class="form__button" type="submit" disabled>
+                подписка
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="logo-section">
+          <img
+            src="images/AUTO-MAGAZINE.svg"
+            alt="логотип Auto-Magazine"
+            class="logo logo_place_footer"
+          />
+          <p class="logo-section__copyright">&copy; Auto-Magazine 2021</p>
+        </div>
+      </footer>
     </div>
     <script src="scripts/script.js"></script>
   </body>

@@ -1,6 +1,6 @@
 .slider {
   overflow: hidden;
-  border-right: 1px solid #E1FD2C;
+  border-right: 1px solid #e1fd2c;
 }
 
 .slider__slide {
@@ -11,12 +11,5 @@
 @media screen and (max-width: 1023px) {
   .slider {
     border-right: 0;
-    max-height: 510px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .slider__image {
-    max-height: 204px;
   }
 }

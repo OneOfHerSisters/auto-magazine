@@ -1,5 +1,3 @@
-@import '../blocks/variables.scss';
-
 .slider {
     overflow: hidden;
     border-right: 1px solid $color-text;
@@ -14,14 +12,5 @@
 @media screen and (max-width: $screen-tablet) {
     .slider {
         border-right: 0;
-        max-height: 510px;
-    }
-}
-
-@media screen and (max-width: $screen-mobile) {
-    .slider {
-        &__image {
-            max-height: 204px;
-        }
     }
 }

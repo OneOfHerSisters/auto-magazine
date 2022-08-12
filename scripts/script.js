@@ -46,8 +46,8 @@ if( window.innerWidth < 1024){
 const images = document.querySelectorAll(".slider__image");
 const slider = document.querySelector(".slider");
 const sliderSlide= document.querySelector(".slider__slide");
-const prevButton = document.querySelector(".btn-prev");
-const nextButton = document.querySelector(".btn-next");
+const prevButton = document.querySelector(".btn_type_prev");
+const nextButton = document.querySelector(".btn_type_next");
 
 let width;
 let activeSlide = 0;
@@ -120,8 +120,5 @@ for (var i = 0; i < dots.length; i++) {
     })(i);
    }
 
-const formButton = document.querySelector('.form__button');
 
-formButton.addEventListener('click', function() {
-  formButton.innerHTML = "Готово!";
-})
+

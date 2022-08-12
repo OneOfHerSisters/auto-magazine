@@ -1,3 +1,6 @@
+@import url(../vendor/variables.css);
+@import url(../vendor/normalize.css);
+
 @import url(../blocks/variables.css);
 @import url(../blocks/page.css);
 @import url(../blocks/menu.css);

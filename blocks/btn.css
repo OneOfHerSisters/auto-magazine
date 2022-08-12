@@ -6,6 +6,7 @@
 
 .btn:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .btn:not(:last-of-type) {

@@ -78,6 +78,10 @@
   text-transform: uppercase;
 }
 
+.form__button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .form {
     margin: 60px auto 120px auto;

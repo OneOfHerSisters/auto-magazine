@@ -1,5 +1,3 @@
-@import '../blocks/variables.scss';
-
 .intro {
     color: $color-text;
     display: grid;
@@ -84,10 +82,6 @@
             margin: 0 auto;
         }
 
-        &__image {
-            max-height: 510px;
-        }
-
         &__content {
             max-width: 560px;
             margin: 0 auto;
@@ -119,7 +113,6 @@
 
         &__image {
             min-width: 280px;
-            max-height: 202px;
         }
 
         &__content {
